@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="food.js" type="text/JavaScript"></script>
+    <title>Website feedback</title>
+</head>
+<body class="feedbackpage_body">
+    <header  id= "navmenu" class="navbar">
+        <img src="photo/dine spot logo.png" alt="logo" width="150" height="100" controls title="Dine Spot Logo">
+     
+        <nav class="menu">
+           <ul>
+               <li><a class="oo" href="#">Cuisine</a>
+                   <div class="dropdown">
+                    <ul>
+                       <li><a href="#">Chinese</a>
+                       <li><a href="#">West</a>
+                       <li><a href="#">Malay</a>
+                       <li><a href="#">Indian</a>
+                       <li><a href="#">Nyonya</a>
+                   </ul>
+                   </div>
+               </li>
+           </ul>
+              </nav>
+     
+           <div class="buttons">
+        <a href="" class="button Feedback">Feedback</a>
+        <a href="about.html" class="button About">About As</a>
+           </div>
+     <hr>
+     
+     </header>
+
+    <h1 class="heading" id="heading">Give a feedback for us to improve the website</h1>
+        
+        
+    
+    <button class="startbutton" id="start_button" onclick="startfeedback()">Start Feedback</button>
+
+    <article>
+        <div class="form" id="feedbackForm" style="display:none;">
+            <form name="feedback" method="POST" action="feedback_db.php" enctype="application/x-www-form-urlencoded">
+
+                <!-- Overall feedback -->
+                <fieldset required>
+                    <legend>Overall Feedback</legend>
+                    <table class="feedback_table">
+                        <tr>
+                            <th>How satisfied are you with the website?</th>
+                            <th>1<br><input type="radio" name="satisfaction" value="1" required></th>
+                            <th>2<br><input type="radio" name="satisfaction" value="2" required></th>
+                            <th>3<br><input type="radio" name="satisfaction" value="3" required></th>
+                            <th>4<br><input type="radio" name="satisfaction" value="4" required></th>
+                            <th>5<br><input type="radio" name="satisfaction" value="5" required></th>
+                        </tr>   
+                        <tr>
+                            <th>How helpful did you find the food recommendations?</th>
+                            <th>1<br><input type="radio" name="food_recommendations" value="1" required></th>
+                            <th>2<br><input type="radio" name="food_recommendations" value="2" required></th>
+                            <th>3<br><input type="radio" name="food_recommendations" value="3" required></th>
+                            <th>4<br><input type="radio" name="food_recommendations" value="4" required></th>
+                            <th>5<br><input type="radio" name="food_recommendations" value="5" required></th>
+                        </tr>   
+                        <tr>
+                            <th>Were you satisfied with the variety of food recommendations?</th>
+                            <th>1<br><input type="radio" name="food_variety" value="1" required></th>
+                            <th>2<br><input type="radio" name="food_variety" value="2" required></th>
+                            <th>3<br><input type="radio" name="food_variety" value="3" required></th>
+                            <th>4<br><input type="radio" name="food_variety" value="4" required></th>
+                            <th>5<br><input type="radio" name="food_variety" value="5" required></th>
+                        </tr>
+                        <tr>
+                            <th>How accurate were the restaurant details (address, operating hours, menu, etc.)?</th>
+                            <th>1<br><input type="radio" name="restaurant_accuracy" value="1" required></th>
+                            <th>2<br><input type="radio" name="restaurant_accuracy" value="2" required></th>
+                            <th>3<br><input type="radio" name="restaurant_accuracy" value="3" required></th>
+                            <th>4<br><input type="radio" name="restaurant_accuracy" value="4" required></th>
+                            <th>5<br><input type="radio" name="restaurant_accuracy" value="5" required></th>
+                        </tr>
+                        <tr>
+                            <th>Did you find the restaurant locations and details useful?</th>
+                            <th colspan="2">Yes<br><input type="radio" name="restaurant_details_useful" value="yes" required></th>
+                            <th></th>
+                            <th colspan="2">No<br><input type="radio" name="restaurant_details_useful" value="no" required></th>
+                            <th></th>
+                        </tr>   
+                        <tr>
+                            <th>Do you feel that the website offers a good representation of Malaysia's food culture?</th>
+                            <th colspan="2">Yes<br><input type="radio" name="food_culture_representation" value="yes" required></th>
+                            <th></th>
+                            <th colspan="2">No<br><input type="radio" name="food_culture_representation" value="no" required></th>
+                            <th></th>
+                        </tr>   
+                        <tr>
+                            <th>Do you think the restaurant locations are easy to find?</th>
+                            <th colspan="2">Yes<br><input type="radio" name="restaurant_locations_easy" value="yes" required></th>
+                            <th></th>
+                            <th colspan="2">No<br><input type="radio" name="restaurant_locations_easy" value="no" required></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <!-- Suggestion & Improvement (Optional) -->
+                <fieldset>
+                    <legend>Suggestion & Improvement (Optional)</legend>
+                    <table class="feedback_table">
+                        <tr>
+                            <th>What food or restaurant would you like to see added to the website? : </th>
+                            <th><textarea name="add_restaurant" rows="1" cols="40"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th>Do you have any suggestions for improving the recommendations? : </th>
+                            <th><textarea name="recommendations" rows="1" cols="40"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th>Any other comments or feedback? : </th>
+                            <th><textarea name="other_comment" rows="1" cols="40"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th>If you like to be contacted for follow-up or additional questions, please provide your email address. : </th>
+                            <th><textarea name="user_email" rows="1" cols="40"></textarea></th>
+                        </tr>
+                    </table>
+                </fieldset>
+                
+
+                <button class="submitbutton" id="submit_button" onclick="endfeedback()" type="submit">Submit Feedback</button>
+            </form>
+        </div>
+        <h1 id="after_submit" style="display:none;">Thanks For Your Feedback!</h1>
+    </article>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

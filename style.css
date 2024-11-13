@@ -1,0 +1,425 @@
+.about_table{   /*about page table design*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: blanchedalmond;
+}
+.about_p {   /*about page member's description*/
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    color: blanchedalmond;
+    font-size: larger;
+    border-width: 2.5%;
+}
+.about_member{   /*about page member's name,id*/
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: x-large;
+    color: blanchedalmond;
+}
+.about_foot{       /*about page footer*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+.about_html{   /*about page background*/
+    background-image:url(photo/foodbackgroung.jpg);
+    background-size: cover;         
+    background-position: center;   
+    background-attachment: fixed; 
+    background-repeat: no-repeat;  
+    margin: auto;
+}
+.about_thp{   /*about page table header words*/
+    font-size: xx-large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_pic{   /*about page member's picture*/
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    border: double;
+    border-width: 2px;
+    font-size: x-large;
+}
+.about_cap{   /*about page table caption*/
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: blanchedalmond;
+}
+.about_a{   /*about page footer's link*/
+    color: blanchedalmond;
+}
+.about_a:hover{   /*about page footer's link*/
+    color: aqua;
+}
+
+
+
+
+/*feedback page style*/
+
+.feedbackpage_body{
+    background-image: url(photo/foodbackgroung.jpg);
+    background-size: cover;         
+    background-position: center;   
+    background-attachment: fixed; 
+    background-repeat: no-repeat;  
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
+    font-size: 250%;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.startbutton,.submitbutton {
+    display: block;
+    margin: auto;
+    background-image: url(photo/woodborder.jpg)!important;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #937354, inset -4px -4px 10px #55402b;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(255, 255, 255);
+}
+  
+.startbutton:hover, .submitbutton:hover {
+    box-shadow: inset 2px 2px 5px #807066, inset -2px -2px 5px #a58c7a, 2px 2px 5px #755e46, -2px -2px 5px #806b50;
+}
+  
+.startbutton:focus, .submitbutton:focus {
+    outline: none;
+    box-shadow: inset 2px 2px 5px #a09183, inset -2px -2px 5px #654e38, 2px 2px 5px #be966e, -2px -2px 5px #816144;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.feedback_table{
+    vertical-align: middle;
+    font-size: 120%;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+
+th{
+    height: 50px;
+    padding: 10px;
+}
+
+fieldset {
+    display: inline-block;
+    width: 85%;
+    margin-bottom: 30px; 
+    padding: 10px; 
+}
+
+article> h1{
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+    margin: 0;
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*homepage*/
+.about_body{
+    margin: auto;
+}
+
+
+
+
+
+.homepage_buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: burlywood;
+    display: none;
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.menu ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: burlywood;
+    margin-top: 12px;
+    margin-left: -8px;
+    text-align: right;
+}
+
+.dropdown li a {
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-size: cover;         
+    background-position: center;   
+    background-attachment: fixed;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.homepage_body{
+    text-align: center;
+    background-image: url(photo/foodbackgroung.jpg);
+    background-size: cover;         
+    background-position: center;   
+    background-attachment: fixed; 
+    background-repeat: no-repeat;  
+    margin: auto;
+}
+
+.homepage_h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.homepage_h1{
+    font-size: 50px;
+    padding: 30px;
+}
+
+.homepage_button{
+    background-color: burlywood;
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#slider1 { 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin:0 auto;
+    width: 900px;
+    height: 900px;
+    text-align: center;
+}
+
+#slider1 input[type=radio] {
+    display: none;
+}
+
+#slider1 label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides1-tutorial {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    position: relative;
+    z-index:1;
+}
+
+#overflow1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+#press1:checked ~ #slides1-tutorial .inner1-tutorial  {
+    margin-left: 0;
+}
+
+#press2:checked ~ #slides1-tutorial .inner1-tutorial  {
+    margin-left: -100%;
+}
+
+#press3:checked ~ #slides1-tutorial .inner1-tutorial  {
+    margin-left: -200%;
+}
+
+#press4:checked ~ #slides1-tutorial .inner1-tutorial  {
+    margin-left: -300%;
+}
+
+#press5:checked ~ #slides1-tutorial .inner1-tutorial  {
+    margin-left: -400%;
+}
+
+
+
+#slides1-tutorial .inner1-tutorial  {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 1200%;
+    line-height: 1.5;
+    height: 675px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#slides1-tutorial .slide {
+    width: 8.33333%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    vertical-align: bottom;
+    height: 100%;
+    color: #000;
+
+    
+}
+
+
+#slides1-tutorial .press_1 {
+    background-image: url('photo/food/chinese\ pork.png');
+    background-position: 0%;
+    background-size: cover;
+}
+
+#slides1-tutorial .press_2 {
+    background-image: url('photo/food/western\ bugger.png');
+    background-position: 0%;
+    background-size: cover;
+}
+
+#slides1-tutorial .press_3 {
+    background-image: url('photo/food/malay\ nasi\ kerabu.png');
+    background-position: 0%;
+    background-size: cover;
+}
+
+#slides1-tutorial .press_4 {
+    background-image: url('photo/food/indian\ braws\ bowl.png');
+    background-position: 0%;
+    background-size: cover;
+}
+
+#slides1-tutorial .press_5 {
+    background-image: url('photo/food/nyonya\ food.png');
+    background-position: 0%;
+    background-size: cover;
+}
+
+.slide-content {
+    background-color: transparent
+    width: 100%;
+    height: 5px;
+    font-size: larger;
+    color: blue;
+}
+
+#controls1 {
+    margin: -375px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls1 label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 70px;
+}
+
+#controls1 label:hover {
+    opacity: 1;
+}
+
+#press1:checked ~ #controls1 label:nth-child(2),
+#press2:checked ~ #controls1 label:nth-child(3),
+#press3:checked ~ #controls1 label:nth-child(4),
+#press4:checked ~ #controls1 label:nth-child(5),
+#press5:checked ~ #controls1 label:nth-child(1){
+    background: url(https://www.svgrepo.com/show/486236/right-arrow-backup-2.svg);
+    background-size: cover;
+    float: right;
+    margin: 0 -130px 0 0;
+    display: block;
+}
+
+#press1:checked ~ #controls1 label:nth-last-child(1),
+#press2:checked ~ #controls1 label:nth-last-child(5),
+#press3:checked ~ #controls1 label:nth-last-child(4),
+#press4:checked ~ #controls1 label:nth-last-child(3),
+#press5:checked ~ #controls1 label:nth-last-child(2){
+    background:url(https://www.svgrepo.com/show/486232/left-arrow-backup-2.svg);
+    background-size: cover;
+    float: left;
+    margin: 0 0 0 -130px;
+    display: block;
+}
+
+footer>img{
+    padding: 1%;
+}
+
+footer>h3{
+    color: white;
+}
+/*end*/
